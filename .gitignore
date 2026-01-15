@@ -1,0 +1,17 @@
+__pycache__
+fastapi-env
+blog-env
+blog/__pycache__
+.DS_Store
+.vscode
+app/.deta
+app/blog/__pycache__
+*.db
+*.sqlite
+*.sqlite3
+.env
+venv/
+env/
+*.pyc
+__pycache__/
+.pytest_cache/
