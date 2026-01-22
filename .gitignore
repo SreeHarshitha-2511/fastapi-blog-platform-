@@ -11,6 +11,7 @@ app/blog/__pycache__
 *.sqlite3
 .env
 venv/
+virtenv/
 env/
 *.pyc
 __pycache__/

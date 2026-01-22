@@ -1,7 +1,25 @@
-fastapi
-uvicorn
-sqlalchemy
-passlib
-bcrypt
-python-jose
-python-multipart
+# FastAPI and web framework
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+ 
+# Database
+sqlalchemy==2.0.36
+alembic==1.14.0
+psycopg2-binary==2.9.10
+ 
+# Authentication & Security
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-jose[cryptography]==3.3.0
+PyJWT==2.9.0
+ 
+# Configuration
+pydantic==2.9.2
+pydantic-settings==2.5.2
+ 
+# Testing
+# pytest==9.0.2
+# pytest-asyncio==0.24.0
+ 
+ 

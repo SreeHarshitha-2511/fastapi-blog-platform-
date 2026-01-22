@@ -15,6 +15,11 @@ from app import models
 # Alembic Config
 config = context.config
 
+# Override sqlalchemy.url with environment variable if available
+database_url = os.getenv("DATABASE_URL")
+if database_url:
+    config.set_main_option("sqlalchemy.url", database_url)
+
 # Setup logging
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)

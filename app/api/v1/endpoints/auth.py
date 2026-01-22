@@ -8,10 +8,10 @@ from app.core import security
 from app.utils.hashing import Hash
 
 
-router = APIRouter(tags=["Authentication"])
+router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 
-@router.post("/login")
+@router.post("/login", response_model=dict)
 def login(
     request: OAuth2PasswordRequestForm = Depends(),
     db: Session = Depends(get_db),
